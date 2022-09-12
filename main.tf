@@ -5,3 +5,7 @@ module "vpc" {
   env        = var.env
   AZ         = var.AZ
 }
+
+output "out" {
+  value = module.vpc.out
+}
