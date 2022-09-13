@@ -11,3 +11,7 @@ module "vpc" {
 output "out" {
   value = module.vpc.out
 }
+
+output "subnet_ids" {
+  value = module.vpc.subnet_ids
+}
