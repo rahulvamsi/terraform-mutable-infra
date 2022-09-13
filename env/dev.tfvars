@@ -6,7 +6,7 @@ subnets = {
     igw         = true
   }
   apps = {
-    name        = "apps-private"
+    name        = "apps"
     subnet_cidr = ["10.100.2.0/24", "10.100.3.0/24"]
     ngw         = true
   }
