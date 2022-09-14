@@ -10,3 +10,7 @@ variable "default_route_table_id" {}
 variable "docdb_engine_version" {}
 variable "docdb_cluster_instances_count" {}
 variable "docdb_instance_class" {}
+
+variable "rds_engine_version" {}
+variable "rds_cluster_instances_count" {}
+variable "rds_instance_class" {}

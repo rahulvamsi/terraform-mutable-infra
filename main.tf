@@ -20,4 +20,14 @@ module "docdb" {
   instance_class = var.docdb_instance_class
 }
 
+module "rds" {
+  source         = "./vendor/modules/rds/"
+  env            = var.env
+  engine_version = var.rds_engine_version
+  db_subnets_ids = local.db_subnets_ids
+  vpc_id         = module.vpc.vpc_id
+  vpc_cidr_block = var.vpc_cidr_block
+  instance_count = var.rds_cluster_instances_count
+  instance_class = var.rds_instance_class
+}
 
