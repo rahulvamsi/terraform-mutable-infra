@@ -7,4 +7,6 @@ variable "default_vpc_cidr" {}
 variable "default_route_table_id" {}
 
 
-variable "engine_version" {}
+variable "docdb_engine_version" {}
+variable "docdb_cluster_instances_count" {}
+variable "docdb_instance_class" {}
