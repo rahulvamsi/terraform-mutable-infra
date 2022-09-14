@@ -25,3 +25,4 @@ default_vpc_cidr       = "172.31.0.0/16"
 default_route_table_id = "rtb-0926f0e4e09c52838"
 
 ## DOCDB
+engine_version = "4.0.0"
