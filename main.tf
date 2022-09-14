@@ -9,16 +9,13 @@ module "vpc" {
   default_route_table_id = var.default_route_table_id
 }
 
-//module "docdb" {
-//  source = "./vendor/modules/docdb/"
-//  env    = var.env
-//  engine_version = var.engine_version
-//}
-
-locals {
-  apps_subnets_ids = module.vpc.out["apps"].subnet_ids
+module "docdb" {
+  source          = "./vendor/modules/docdb/"
+  env             = var.env
+  engine_version  = var.engine_version
+  apps_subnet_ids = local.apps_subnets_ids
+  vpc_id          = module.vpc.vpc_id
+  vpc_cidr_block  = var.vpc_cidr_block
 }
 
-output "out" {
-  value = local.apps_subnets_ids
-}
+
