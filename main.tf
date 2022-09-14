@@ -8,3 +8,8 @@ module "vpc" {
   default_vpc_cidr       = var.default_vpc_cidr
   default_route_table_id = var.default_route_table_id
 }
+
+module "docdb" {
+  source = "./vendor/modules/docdb/"
+  env    = var.env
+}
