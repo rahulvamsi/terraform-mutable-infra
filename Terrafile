@@ -4,4 +4,7 @@ vpc:
 docdb:
   source:  "https://github.com/raghudevopsb66/tf-module-docdb.git"
   version: "main"
+rds:
+  source:  "https://github.com/raghudevopsb66/tf-module-rds.git"
+  version: "main"
 
