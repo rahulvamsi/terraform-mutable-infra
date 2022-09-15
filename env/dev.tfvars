@@ -42,3 +42,4 @@ elasticache_engine_version          = "6.2"
 #RabbitMQ
 rabbitmq_instance_type = "t3.micro"
 
+WORKSTATION_IP = "172.31.9.220/32"

@@ -49,6 +49,7 @@ module "rabbitmq" {
   vpc_id         = module.vpc.vpc_id
   vpc_cidr_block = var.vpc_cidr_block
   instance_type  = var.rabbitmq_instance_type
+  WORKSTATION_IP = var.WORKSTATION_IP
 }
 
 
