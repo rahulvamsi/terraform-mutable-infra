@@ -18,6 +18,7 @@ module "docdb" {
   vpc_cidr_block = var.vpc_cidr_block
   instance_count = var.docdb_cluster_instances_count
   instance_class = var.docdb_instance_class
+  WORKSTATION_IP = var.WORKSTATION_IP
 }
 
 module "rds" {
@@ -29,6 +30,7 @@ module "rds" {
   vpc_cidr_block = var.vpc_cidr_block
   instance_count = var.rds_cluster_instances_count
   instance_class = var.rds_instance_class
+  WORKSTATION_IP = var.WORKSTATION_IP
 }
 
 module "elasticache" {
