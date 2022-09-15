@@ -18,3 +18,5 @@ variable "rds_instance_class" {}
 variable "elasticache_instance_class" {}
 variable "elasticache_cluster_instances_count" {}
 variable "elasticache_engine_version" {}
+
+variable "rabbitmq_instance_type" {}
