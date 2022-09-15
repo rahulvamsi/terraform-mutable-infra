@@ -31,3 +31,15 @@ module "rds" {
   instance_class = var.rds_instance_class
 }
 
+module "elasticache" {
+  source         = "./vendor/modules/elasticache/"
+  env            = var.env
+  engine_version = var.elasticache_engine_version
+  db_subnets_ids = local.db_subnets_ids
+  vpc_id         = module.vpc.vpc_id
+  vpc_cidr_block = var.vpc_cidr_block
+  instance_count = var.elasticache_cluster_instances_count
+  instance_class = var.elasticache_instance_class
+}
+
+

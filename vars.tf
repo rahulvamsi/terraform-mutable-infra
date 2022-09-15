@@ -14,3 +14,7 @@ variable "docdb_instance_class" {}
 variable "rds_engine_version" {}
 variable "rds_cluster_instances_count" {}
 variable "rds_instance_class" {}
+
+variable "elasticache_instance_class" {}
+variable "elasticache_cluster_instances_count" {}
+variable "elasticache_engine_version" {}

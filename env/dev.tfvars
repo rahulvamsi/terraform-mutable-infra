@@ -34,5 +34,9 @@ rds_engine_version          = "5.7.mysql_aurora.2.10.2"
 rds_cluster_instances_count = 1
 rds_instance_class          = "db.t3.small"
 
+## Elasticache
+elasticache_instance_class          = "cache.t3.micro"
+elasticache_cluster_instances_count = 1
+elasticache_engine_version          = "6.2"
 
 
