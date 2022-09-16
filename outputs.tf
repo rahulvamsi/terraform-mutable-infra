@@ -6,7 +6,7 @@ output "vpc_id" {
   value = module.vpc.vpc_id
 }
 
-output "workspace_id" {
+output "workstation_ip" {
   value = var.WORKSTATION_IP
 }
 
