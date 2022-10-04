@@ -44,4 +44,4 @@ rabbitmq_instance_type = "t3.micro"
 
 WORKSTATION_IP = "172.31.9.220/32"
 
-PUBLIC_DNS_RECORD = "www.devopsb66.online"
+PUBLIC_DNS_RECORD = "www.rahulsdevops.online"
