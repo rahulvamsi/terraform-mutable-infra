@@ -20,9 +20,9 @@ subnets = {
 
 env                    = "prod"
 AZ                     = ["us-east-1a", "us-east-1b"]
-default_vpc_id         = "vpc-0615ecd76b6d3e88a"
+default_vpc_id         = "vpc-010712ed9cba8d884"
 default_vpc_cidr       = "172.31.0.0/16"
-default_route_table_id = "rtb-0926f0e4e09c52838"
+default_route_table_id = "rtb-00985f1d2ec4265dd"
 
 ## DOCDB
 docdb_engine_version          = "4.0.0"
